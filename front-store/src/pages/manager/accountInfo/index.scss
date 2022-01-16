@@ -1,0 +1,56 @@
+/** @format */
+
+.submenu {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid #ccc;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: auto;
+    a {
+      color: #444;
+    }
+    a.submenu-active,
+    a:hover {
+      color: #ea0c0c;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+}
+
+.customer-password {
+  max-width: 600px;
+  margin: auto;
+  background: #e4e4e4;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  &.w-75 {
+    width: 100% !important;
+  }
+  .col-md-2 {
+    strong {
+      margin-bottom: 8px;
+      display: block;
+    }
+    @media (min-width: 768px) {
+      width: 25%;
+      strong {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .submit-btn {
+    position: absolute;
+    bottom: -6rem;
+    left: 25%;
+    width: 50%;
+    .form-btn {
+      min-width: 0;
+      width: 100%;
+    }
+  }
+}

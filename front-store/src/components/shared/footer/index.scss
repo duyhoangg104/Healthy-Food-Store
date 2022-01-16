@@ -1,0 +1,21 @@
+/** @format */
+
+.main-footer {
+  background-color: var(--green-bold-color);
+  color: #fff;
+  .social {
+    img {
+      max-width: 40px;
+      border-radius: 5px;
+    }
+  }
+  .certificate-bg {
+    background-color: var(--dark-bold-color);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 300px;
+    img {
+      max-width: 250px;
+    }
+  }
+}

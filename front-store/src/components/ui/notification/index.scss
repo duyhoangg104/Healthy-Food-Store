@@ -1,0 +1,26 @@
+/** @format */
+
+.notification-container {
+  position: fixed;
+  top: 10px;
+  left: calc(50% - 125px);
+  width: 250px;
+  z-index: 1000;
+  .notification-item {
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 15px;
+    &.success {
+      background-color: #5da423;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+    &.error {
+      background-color: var(--red-color);
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/** @format */
+
+.home-slider {
+  &.rounded {
+    border-radius: 23px;
+  }
+  overflow: hidden;
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-image: none;
+  }
+  .carousel-item {
+    img {
+      &.rounded {
+        border-radius: 23px;
+      }
+    }
+  }
+}

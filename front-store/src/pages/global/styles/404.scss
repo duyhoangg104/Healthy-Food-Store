@@ -1,0 +1,14 @@
+/** @format */
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4rem 0;
+  img {
+    display: block;
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+}

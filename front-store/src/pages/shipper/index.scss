@@ -1,0 +1,77 @@
+/** @format */
+
+.employee-home {
+  .row-items {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: auto;
+    .item {
+      width: 50%;
+      .inner {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: #555;
+        max-width: 250px;
+        margin: auto;
+        border-radius: 10px;
+        &:hover {
+          color: var(--purple-color);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+        }
+        .icon {
+          margin-bottom: 1rem;
+        }
+        .text {
+          text-align: center;
+          h3 {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+.order-list__handling {
+  table {
+    .actions {
+      a {
+        svg {
+          height: auto !important;
+          width: auto;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}
+
+.shipper-shipping__history {
+  .date-block {
+    position: relative;
+    .date {
+      cursor: pointer;
+      background-color: white;
+      max-width: 200px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .react-calendar {
+      border: 1px solid #eee !important;
+      border-radius: 4px;
+    }
+  }
+  .abs-position {
+    position: absolute;
+    top: 3rem;
+  }
+}
+

@@ -1,0 +1,20 @@
+/** @format */
+
+.suggestion {
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .item {
+      img {
+        max-width: 300px;
+        border: 1px solid var(--green-blur-color);
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/** @format */
+
+.data-list {
+  min-height: 480px;
+  .table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: var(--primary-color);
+      color: white;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      background-color: transparent;
+      border: none;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.top-logo__admin {
+  max-width: 200px;
+  margin: auto;
+  img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 200px;
+  }
+}

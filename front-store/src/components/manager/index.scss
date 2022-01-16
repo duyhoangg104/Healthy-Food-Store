@@ -1,0 +1,127 @@
+/** @format */
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  .header-search__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2rem;
+    margin-right: 0;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    padding-right: 0;
+    border-radius: 2rem;
+    height: 38px;
+    input {
+      flex: 1;
+      border: none;
+      color: #444;
+    }
+    button {
+      height: 38px;
+      border: none;
+      background-color: var(--primary-color);
+      text-transform: uppercase;
+      color: #fff;
+      padding: 0 1rem;
+      border-radius: 32px;
+      font-size: 14px;
+    }
+  }
+}
+
+.data-list {
+  min-height: 480px;
+  .table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    td,
+    th {
+      border: 1px solid #ddd;
+      padding: 8px;
+      font-size: 15px;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: var(--primary-color);
+      color: white;
+    }
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button {
+      background-color: transparent;
+      border: none;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.custom-select {
+  padding: 0.5rem;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.manager-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  .inner {
+    width: 100%;
+  }
+}
+
+.switch-category {
+  min-width: 100px;
+}
+
+.manager-stats__filter {
+  .date-block {
+    position: relative;
+    .date {
+      cursor: pointer;
+      background-color: white;
+      max-width: 200px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 500px) {
+        max-width: 150px;
+      }
+    }
+    .react-calendar {
+      border: 1px solid #eee !important;
+      border-radius: 4px;
+    }
+  }
+  .abs-position {
+    position: absolute;
+    top: 3rem;
+  }
+  .select-block {
+    position: relative;
+    bottom: -5px;
+    select {
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/** @format */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 0;
+  img {
+    max-width: 80px;
+  }
+}

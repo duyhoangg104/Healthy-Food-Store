@@ -1,0 +1,11 @@
+.menu-page {
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+}

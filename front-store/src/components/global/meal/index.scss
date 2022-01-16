@@ -1,0 +1,204 @@
+.category-selection {
+  border: 1px solid var(--green-color);
+  border-radius: 4px;
+  min-width: 150px;
+  position: sticky;
+  top: 10px;
+  z-index: 5;
+  background-color: #f5f5f5;
+  li {
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid var(--green-color);
+    &:last-child {
+      border-bottom: none;
+    }
+    &.active {
+      background-color: #d6f0b7;
+      color: var(--primary-color);
+    }
+  }
+  @media (max-width: 991px) {
+    display: flex;
+    width: 100%;
+    margin-left: 0;
+    top: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    li {
+      border-bottom: none;
+      border-right: 1px solid var(--green-color);
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
+
+.kcal-summary,
+.products-summary {
+  border: 1px solid var(--green-color);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.productList__meal {
+  @media (max-width: 991px) {
+    margin-right: 0;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    @media (max-width: 1250px) {
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 991px) and (max-width: 1024px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width: 500px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .product-item {
+    position: relative;
+    overflow-x: hidden;
+    border-top: 1px solid #f1f1f1;
+    .media {
+      img {
+        max-width: 100%;
+        max-height: 200px;
+        margin: auto;
+        display: block;
+        border-radius: 0.5rem;
+      }
+      max-width: 80%;
+      margin: auto;
+      margin-top: 1rem;
+    }
+    .select {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+      flex-direction: column;
+      align-items: center;
+      button {
+        max-width: 120px;
+        min-width: 100px;
+      }
+    }
+    .info {
+      padding: 1rem;
+      min-height: 46px;
+    }
+    .actions {
+      padding: 1rem;
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      .left {
+        display: flex;
+        gap: 0.5rem;
+        .input {
+          padding: 0.6rem;
+          font-size: 16px;
+          font-weight: 600;
+          border: 1px solid #999;
+          max-width: 60px;
+        }
+        .btns {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+    }
+    &:hover {
+      .like-btn {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.meal-summary {
+  position: sticky;
+  top: 10px;
+  @media (max-width: 991px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 100%;
+  }
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
+  .products-summary {
+    .list-meal {
+      min-height: 150px;
+      .meal-item {
+        display: flex;
+        margin-bottom: 0.5rem;
+        position: relative;
+        img {
+          max-width: 50px;
+          margin: 0 5px 5px 0;
+        }
+        p {
+          font-size: 13px;
+          font-weight: 500;
+          padding-right: 8px;
+        }
+        .delete-meal__item {
+          color: var(--red-color);
+          background: none;
+          border: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.meal-list {
+  min-height: 10vh;
+  .meal-item__wrapper {
+    overflow: hidden;
+    .meal-product__list {
+      transition: all 0.3s ease-in-out;
+      height: 0;
+      &.open {
+        height: 400px;
+        overflow-y: scroll;
+      }
+      .item {
+        img {
+          max-width: 150px;
+          @media (max-width: 500px) {
+            max-width: 80px;
+            max-height: 80px;
+          }
+        }
+        position: relative;
+        .delete {
+          position: absolute;
+          top: 10px;
+          right: 15px;
+        }
+      }
+    }
+  }
+}

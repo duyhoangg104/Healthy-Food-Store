@@ -1,0 +1,101 @@
+/** @format */
+.main-header {
+  .logo-container {
+    img {
+      max-width: 120px;
+    }
+  }
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+    .header-item__badge {
+      position: absolute;
+      top: -12px;
+      right: -3px;
+      background-color: var(--red-color);
+      height: 24px;
+      width: 24px;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+  .nav-links,
+  .top-links {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nav-link__item {
+        margin-right: 1rem;
+        a {
+          transition: all 0.2s ease-in-out;
+          color: #222;
+          &:hover,
+          &:focus {
+            color: var(--primary-color);
+          }
+          &.nav-link__active {
+            color: var(--primary-color);
+          }
+        }
+        &.nav-link__item-btn {
+          a {
+            display: flex;
+            align-items: center;
+            background-color: #f2f2f2;
+            border-radius: 32px;
+            padding: 6px 16px;
+            svg {
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header-top {
+    .user-menu {
+      position: absolute;
+      top: 2.5rem;
+      left: -2rem;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      z-index: 50;
+      background: #f0f0f0;
+      border-radius: 5px;
+      border: 1px solid var(--green-color);
+      li {
+        border-bottom: 1px solid var(--green-color);
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+        padding: 0.5rem 0;
+        &:last-child {
+          border-bottom: none;
+        }
+        a {
+          color: var(--primary-color);
+        }
+      }
+      &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-bottom: 15px solid #f0f0f0;
+        position: absolute;
+        top: -17px;
+        left: 41%;
+      }
+    }
+  }
+}

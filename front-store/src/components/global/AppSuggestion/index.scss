@@ -1,0 +1,38 @@
+/** @format */
+
+.app-suggestion {
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .item {
+      max-width: 300px;
+      position: relative;
+      display: block;
+      @media (max-width: 768px) {
+        max-width: 90%;
+      }
+      img {
+        max-width: 100%;
+        border: 1px solid var(--green-blur-color);
+      }
+      .text {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        color: #fff;
+        font-weight: 600;
+        top: 30%;
+        padding: 2.5rem 0;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

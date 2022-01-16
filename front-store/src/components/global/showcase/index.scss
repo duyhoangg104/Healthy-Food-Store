@@ -1,0 +1,39 @@
+/** @format */
+
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 200px;
+    .icon {
+      width: 100px;
+      height: 100px;
+      box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    .text {
+      margin-top: 1rem;
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    @media (max-width: 500px) {
+      grid-gap: 1rem;
+      max-width: 150px;
+      min-width: 50px;
+    }
+  }
+}

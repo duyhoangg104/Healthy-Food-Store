@@ -1,0 +1,31 @@
+/** @format */
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin: 0 2rem;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  padding-right: 0;
+  border-radius: 2rem;
+  height: 38px;
+  max-width: 600px;
+  input {
+    flex: 1;
+    border: none;
+    color: #444;
+  }
+  button {
+    height: 38px;
+    border: none;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 1rem;
+    border-radius: 32px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}

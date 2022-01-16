@@ -1,0 +1,24 @@
+/** @format */
+
+.section-title {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  .line {
+    height: 1px;
+    background-color: var(--green-blur-color);
+    flex: 1;
+  }
+  .center-title {
+    padding: 14px 40px;
+    border: 1px solid var(--green-blur-color);
+    color: var(--green-color);
+    border-radius: 6px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      padding: 7px 20px;
+    }
+  }
+}

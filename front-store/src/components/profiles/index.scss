@@ -1,0 +1,22 @@
+.profile-menu {
+  .submenu-item__active {
+    font-weight: 600;
+  }
+  ul {
+    width: 100%;
+    height: 100%;
+    li {
+      width: 25%;
+      height: 100%;
+      a {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        display: block;
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
